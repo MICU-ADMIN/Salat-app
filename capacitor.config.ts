@@ -1,7 +1,7 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-	appId: 'icu.mosque.salat',
+	appId: 'com.icumosque.salat ',
 	appName: 'micusalat',
 	webDir: 'dist',
 	server: {
