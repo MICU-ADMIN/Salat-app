@@ -1,0 +1,11 @@
+{
+  "appId": "com.mosqueicusalat.app",
+  "appName": "micusalatapp",
+  "bundledWebRuntime": false,
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  }
+}
