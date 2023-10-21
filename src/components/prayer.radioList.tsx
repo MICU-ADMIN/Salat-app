@@ -65,7 +65,7 @@ export default function PrayerRadio() {
 	};
 
 	return (
-		<div className='mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4'>
+		<div className='mt-4 grid grid-cols-1 gap-y-6 sm:gap-x-4'>
 			{prayers.map((prayer) => (
 				<Card
 					key={prayer.id}

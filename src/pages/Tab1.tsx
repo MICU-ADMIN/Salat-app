@@ -48,8 +48,8 @@ const Tab1: React.FC = () => {
 								style={{
 									position:
 										'fixed',
-									top: 20,
-									left: 20,
+									top: 30,
+									left: 30,
 									right: 0,
 									pointerEvents:
 										'none',
@@ -72,28 +72,18 @@ const Tab1: React.FC = () => {
 				>
 					{/* Main section */}
 					<Col numColSpanLg={4}>
-						{/* <Card className='h-full'> */}
-						{/* <div className='h-60'> */}
-						{/*  */}
 						<PrayerRadio />
-						{/* </div> */}
-						{/* </Card> */}
 					</Col>
 
 					{/* KPI sidebar */}
 					<Col numColSpanLg={2}>
 						<div className='space-y-6'>
 							<Card>
-								{/* <div className='h-24'> */}
 								<PrayerStreak />
-								{/* </div> */}
 							</Card>
 							<Card>
 								<Timing />
 							</Card>
-							{/* <Card>
-								<div className='h-24' />
-							</Card> */}
 						</div>
 					</Col>
 				</Grid>
