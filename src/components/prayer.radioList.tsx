@@ -50,7 +50,7 @@ export default function PrayerRadio() {
 	const [
 		selectedMailingLists,
 		setSelectedMailingLists,
-	] = useState([mailingLists[0]]); // Initialize with an array
+	] = useState([]);
 
 	return (
 		<RadioGroup
@@ -59,7 +59,8 @@ export default function PrayerRadio() {
 				setSelectedMailingLists
 			}
 		>
-			<div className='mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4'>
+			{/* <div className='mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-3 sm:gap-x-4'> */}
+			<div className='mt-4 grid grid-cols-1 gap-y-6  sm:gap-x-4'>
 				{mailingLists.map(
 					(mailingList) => (
 						<RadioGroup.Option
@@ -72,9 +73,9 @@ export default function PrayerRadio() {
 							}) =>
 								classNames(
 									active
-										? 'border-indigo-600 ring-2 ring-indigo-600'
-										: 'border-gray-300',
-									'relative flex cursor-pointer rounded-lg border bg-white p-4 shadow-sm focus:outline-none'
+										? 'border-blue-600 ring-2 ring-blue-600'
+										: 'border-[#1f2937]',
+									'relative flex cursor-pointer rounded-lg border bg-[#0f131e] p-4 shadow-sm focus:outline-none'
 								)
 							}
 						>
@@ -87,7 +88,7 @@ export default function PrayerRadio() {
 										<span className='flex flex-col'>
 											<RadioGroup.Label
 												as='span'
-												className='block text-sm font-medium text-gray-900'
+												className='block text-sm font-medium text-gray-200'
 											>
 												{
 													mailingList.title
@@ -108,7 +109,7 @@ export default function PrayerRadio() {
 											!checked
 												? 'invisible'
 												: '',
-											'h-5 w-5 text-indigo-600'
+											'h-5 w-5 text-blue-600'
 										)}
 										aria-hidden='true'
 									/>
@@ -118,7 +119,7 @@ export default function PrayerRadio() {
 												? 'border'
 												: 'border-2',
 											checked
-												? 'border-indigo-600'
+												? 'border-blue-600'
 												: 'border-transparent',
 											'pointer-events-none absolute -inset-px rounded-lg'
 										)}

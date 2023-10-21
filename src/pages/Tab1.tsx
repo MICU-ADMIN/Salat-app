@@ -10,21 +10,27 @@ import PrayerRadio from '../components/prayer.radioList';
 import { PrayerStreak } from '../components/prayer.streak';
 import Example from '../components/analytics.lineGraph';
 import Timing from '../components/mosque.timing';
+import {
+	IonContent,
+	IonHeader,
+	IonPage,
+	IonTitle,
+	IonToolbar,
+} from '@ionic/react';
 
 const Tab1: React.FC = () => {
 	return (
-		<main>
-			<div className='p-10 overflow-y-auto h-full'>
-				<div className='space-y-4'>
-					<Title className='font-bold text-4xl'>
-						Fajir
-					</Title>
-					<Badge size='xl'>
-						<p className='font-semibold'>
-							5hrs 20 mins until
-							Fajir
-						</p>
-					</Badge>
+		<main className='overflow-y-auto h-full'>
+			<div className='p-10 '>
+				<div className='sticky top-0 position-absolute z-20506'>
+					<div className='space-y-4'>
+						<Badge size='xl'>
+							<p className='font-semibold'>
+								5hrs 20 mins
+								until Fajir
+							</p>
+						</Badge>
+					</div>
 				</div>
 
 				<Grid
@@ -33,12 +39,12 @@ const Tab1: React.FC = () => {
 				>
 					{/* Main section */}
 					<Col numColSpanLg={4}>
-						<Card className='h-full'>
-							{/* <div className='h-60'> */}
-							{/*  */}
-							<PrayerRadio />
-							{/* </div> */}
-						</Card>
+						{/* <Card className='h-full'> */}
+						{/* <div className='h-60'> */}
+						{/*  */}
+						<PrayerRadio />
+						{/* </div> */}
+						{/* </Card> */}
 					</Col>
 
 					{/* KPI sidebar */}
@@ -52,9 +58,9 @@ const Tab1: React.FC = () => {
 							<Card>
 								<Timing />
 							</Card>
-							<Card>
+							{/* <Card>
 								<div className='h-24' />
-							</Card>
+							</Card> */}
 						</div>
 					</Col>
 				</Grid>

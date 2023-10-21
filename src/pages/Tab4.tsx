@@ -24,21 +24,6 @@ const tabs = [
 		href: '#',
 		current: false,
 	},
-	{
-		name: 'Plan',
-		href: '#',
-		current: false,
-	},
-	{
-		name: 'Billing',
-		href: '#',
-		current: false,
-	},
-	{
-		name: 'Team Members',
-		href: '#',
-		current: false,
-	},
 ];
 
 function classNames(...classes: any) {
@@ -68,44 +53,18 @@ const Tab4: React.FC = () => {
         <body class="h-full">
         ```
       */}
-			<div>
+			<div className='h-full bg-inherit overflow-y-auto'>
 				{/* Static sidebar for desktop */}
 
 				{/* Content area */}
-				<div className='lg:pl-64'>
+				<div>
 					<div className='lg:px-8'>
 						<div className='mx-auto flex flex-col lg:max-w-4xl'>
-							<div className='sticky top-0 z-10 flex h-16 flex-shrink-0 border-b border-gray-200 bg-white'>
-								<button
-									type='button'
-									className='border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-purple-500 lg:hidden'
-									onClick={() =>
-										setSidebarOpen(
-											true
-										)
-									}
-								></button>
-								<div className='flex flex-1 justify-between px-4 lg:px-0'>
-									<div className='ml-4 flex items-center lg:ml-6'>
-										<button
-											type='button'
-											className='relative rounded-full bg-white p-1 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2'
-										>
-											<span className='absolute -inset-1.5' />
-											<span className='sr-only'>
-												View
-												notifications
-											</span>
-										</button>
-									</div>
-								</div>
-							</div>
-
 							<main className='flex-1'>
 								<div className='relative mx-auto max-w-4xl'>
 									<div className='pb-16 pt-10'>
 										<div className='px-4 sm:px-6 lg:px-0'>
-											<h1 className='text-3xl font-bold tracking-tight text-gray-900'>
+											<h1 className='text-3xl font-bold tracking-tight text-white'>
 												Settings
 											</h1>
 										</div>
@@ -124,7 +83,7 @@ const Tab4: React.FC = () => {
 													<select
 														id='selected-tab'
 														name='selected-tab'
-														className='mt-1 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-purple-500 sm:text-sm sm:leading-6'
+														className='mt-1 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-white ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-blue-800 sm:text-sm sm:leading-6'
 														defaultValue={
 															tabs.find(
 																(
@@ -168,7 +127,7 @@ const Tab4: React.FC = () => {
 																		}
 																		className={classNames(
 																			tab.current
-																				? 'border-purple-500 text-purple-600'
+																				? 'border-blue-800 text-blue-600'
 																				: 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
 																			'whitespace-nowrap border-b-2 py-4 px-1 text-sm font-medium'
 																		)}
@@ -186,7 +145,7 @@ const Tab4: React.FC = () => {
 												{/* Description list with inline editing */}
 												<div className='mt-10 divide-y divide-gray-200'>
 													<div className='space-y-1'>
-														<h3 className='text-lg font-medium leading-6 text-gray-900'>
+														<h3 className='text-lg font-medium leading-6 text-white'>
 															Profile
 														</h3>
 														<p className='max-w-2xl text-sm text-gray-500'>
@@ -210,18 +169,18 @@ const Tab4: React.FC = () => {
 																<dt className='text-sm font-medium text-gray-500'>
 																	Name
 																</dt>
-																<dd className='mt-1 flex text-sm text-gray-900 sm:col-span-2 sm:mt-0'>
+																<dd className='mt-1 flex text-sm text-white sm:col-span-2 sm:mt-0'>
 																	<span className='flex-grow'>
 																		Chelsea
 																		Hagon
 																	</span>
 																	<span className='ml-4 flex-shrink-0'>
-																		<button
-																			type='button'
-																			className='rounded-md bg-white font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2'
+																		<ion-button
+																			type='ion-button'
+																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</button>
+																		</ion-button>
 																	</span>
 																</dd>
 															</div>
@@ -229,7 +188,7 @@ const Tab4: React.FC = () => {
 																<dt className='text-sm font-medium text-gray-500'>
 																	Photo
 																</dt>
-																<dd className='mt-1 flex text-sm text-gray-900 sm:col-span-2 sm:mt-0'>
+																<dd className='mt-1 flex text-sm text-white sm:col-span-2 sm:mt-0'>
 																	<span className='flex-grow'>
 																		<img
 																			className='h-8 w-8 rounded-full'
@@ -238,24 +197,24 @@ const Tab4: React.FC = () => {
 																		/>
 																	</span>
 																	<span className='ml-4 flex flex-shrink-0 items-start space-x-4'>
-																		<button
-																			type='button'
-																			className='rounded-md bg-white font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2'
+																		<ion-button
+																			type='ion-button'
+																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</button>
+																		</ion-button>
 																		<span
 																			className='text-gray-300'
 																			aria-hidden='true'
 																		>
 																			|
 																		</span>
-																		<button
-																			type='button'
-																			className='rounded-md bg-white font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2'
+																		<ion-button
+																			type='ion-button'
+																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Remove
-																		</button>
+																		</ion-button>
 																	</span>
 																</dd>
 															</div>
@@ -263,17 +222,17 @@ const Tab4: React.FC = () => {
 																<dt className='text-sm font-medium text-gray-500'>
 																	Email
 																</dt>
-																<dd className='mt-1 flex text-sm text-gray-900 sm:col-span-2 sm:mt-0'>
+																<dd className='mt-1 flex text-sm text-white sm:col-span-2 sm:mt-0'>
 																	<span className='flex-grow'>
 																		chelsea.hagon@example.com
 																	</span>
 																	<span className='ml-4 flex-shrink-0'>
-																		<button
-																			type='button'
-																			className='rounded-md bg-white font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2'
+																		<ion-button
+																			type='ion-button'
+																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</button>
+																		</ion-button>
 																	</span>
 																</dd>
 															</div>
@@ -282,19 +241,19 @@ const Tab4: React.FC = () => {
 																	Job
 																	title
 																</dt>
-																<dd className='mt-1 flex text-sm text-gray-900 sm:col-span-2 sm:mt-0'>
+																<dd className='mt-1 flex text-sm text-white sm:col-span-2 sm:mt-0'>
 																	<span className='flex-grow'>
 																		Human
 																		Resources
 																		Manager
 																	</span>
 																	<span className='ml-4 flex-shrink-0'>
-																		<button
-																			type='button'
-																			className='rounded-md bg-white font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2'
+																		<ion-button
+																			type='ion-button'
+																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</button>
+																		</ion-button>
 																	</span>
 																</dd>
 															</div>
@@ -304,7 +263,7 @@ const Tab4: React.FC = () => {
 
 												<div className='mt-10 divide-y divide-gray-200'>
 													<div className='space-y-1'>
-														<h3 className='text-lg font-medium leading-6 text-gray-900'>
+														<h3 className='text-lg font-medium leading-6 text-white'>
 															Account
 														</h3>
 														<p className='max-w-2xl text-sm text-gray-500'>
@@ -324,17 +283,17 @@ const Tab4: React.FC = () => {
 																<dt className='text-sm font-medium text-gray-500'>
 																	Language
 																</dt>
-																<dd className='mt-1 flex text-sm text-gray-900 sm:col-span-2 sm:mt-0'>
+																<dd className='mt-1 flex text-sm text-white sm:col-span-2 sm:mt-0'>
 																	<span className='flex-grow'>
 																		English
 																	</span>
 																	<span className='ml-4 flex-shrink-0'>
-																		<button
-																			type='button'
-																			className='rounded-md bg-white font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2'
+																		<ion-button
+																			type='ion-button'
+																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</button>
+																		</ion-button>
 																	</span>
 																</dd>
 															</div>
@@ -343,29 +302,29 @@ const Tab4: React.FC = () => {
 																	Date
 																	format
 																</dt>
-																<dd className='mt-1 flex text-sm text-gray-900 sm:col-span-2 sm:mt-0'>
+																<dd className='mt-1 flex text-sm text-white sm:col-span-2 sm:mt-0'>
 																	<span className='flex-grow'>
 																		DD-MM-YYYY
 																	</span>
 																	<span className='ml-4 flex flex-shrink-0 items-start space-x-4'>
-																		<button
-																			type='button'
-																			className='rounded-md bg-white font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2'
+																		<ion-button
+																			type='ion-button'
+																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</button>
+																		</ion-button>
 																		<span
 																			className='text-gray-300'
 																			aria-hidden='true'
 																		>
 																			|
 																		</span>
-																		<button
-																			type='button'
-																			className='rounded-md bg-white font-medium text-purple-600 hover:text-purple-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2'
+																		<ion-button
+																			type='ion-button'
+																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Remove
-																		</button>
+																		</ion-button>
 																	</span>
 																</dd>
 															</div>
@@ -381,7 +340,7 @@ const Tab4: React.FC = () => {
 																	Automatic
 																	timezone
 																</Switch.Label>
-																<dd className='mt-1 flex text-sm text-gray-900 sm:col-span-2 sm:mt-0'>
+																<dd className='mt-1 flex text-sm text-white sm:col-span-2 sm:mt-0'>
 																	<Switch
 																		checked={
 																			automaticTimezoneEnabled
@@ -391,9 +350,9 @@ const Tab4: React.FC = () => {
 																		}
 																		className={classNames(
 																			automaticTimezoneEnabled
-																				? 'bg-purple-600'
+																				? 'bg-blue-600'
 																				: 'bg-gray-200',
-																			'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 sm:ml-auto'
+																			'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2 sm:ml-auto'
 																		)}
 																	>
 																		<span
@@ -421,7 +380,7 @@ const Tab4: React.FC = () => {
 																	applicant
 																	data
 																</Switch.Label>
-																<dd className='mt-1 flex text-sm text-gray-900 sm:col-span-2 sm:mt-0'>
+																<dd className='mt-1 flex text-sm text-white sm:col-span-2 sm:mt-0'>
 																	<Switch
 																		checked={
 																			autoUpdateApplicantDataEnabled
@@ -431,9 +390,9 @@ const Tab4: React.FC = () => {
 																		}
 																		className={classNames(
 																			autoUpdateApplicantDataEnabled
-																				? 'bg-purple-600'
+																				? 'bg-blue-600'
 																				: 'bg-gray-200',
-																			'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 sm:ml-auto'
+																			'relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2 sm:ml-auto'
 																		)}
 																	>
 																		<span
