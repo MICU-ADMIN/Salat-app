@@ -54,7 +54,7 @@ const Tab4: React.FC = () => {
         <body class="h-full">
         ```
       */}
-			<div className='h-full bg-inherit overflow-y-auto'>
+			<main className='overscroll-behavior-y: none; h-full overflow-y-auto'>
 				{/* Static sidebar for desktop */}
 
 				{/* Content area */}
@@ -427,7 +427,7 @@ const Tab4: React.FC = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</main>
 		</>
 	);
 };

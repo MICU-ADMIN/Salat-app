@@ -20,16 +20,49 @@ import {
 
 const Tab1: React.FC = () => {
 	return (
-		<main className='overflow-y-auto h-full'>
+		<main className='overscroll-behavior-y: none; h-full overflow-y-auto'>
 			<div className='p-10 '>
-				<div className='sticky top-0 position-absolute z-20506'>
-					<div className='space-y-4'>
-						<Badge size='xl'>
-							<p className='font-semibold'>
-								5hrs 20 mins
-								until Fajir
-							</p>
-						</Badge>
+				<div
+					style={{
+						position: 'sticky',
+						top: '20px',
+						zIndex: 20506,
+					}}
+				>
+					<div
+						style={{
+							background:
+								'linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)',
+							position: 'fixed',
+							top: 0,
+							left: 0,
+							right: 0,
+							height: '150px',
+							pointerEvents:
+								'none',
+							zIndex: 20505,
+						}}
+					>
+						<div className='space-y-4'>
+							<Badge
+								style={{
+									position:
+										'fixed',
+									top: 20,
+									left: 20,
+									right: 0,
+									pointerEvents:
+										'none',
+									zIndex: 20505,
+								}}
+								size='xl'
+							>
+								<p className='font-semibold'>
+									5hrs 20 mins
+									until Fajir
+								</p>
+							</Badge>
+						</div>
 					</div>
 				</div>
 

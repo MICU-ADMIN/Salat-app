@@ -14,7 +14,7 @@ import Timing from '../components/analytics.timing';
 
 const Tab2: React.FC = () => {
 	return (
-		<main className='overflow-y-auto h-full'>
+		<main className='overscroll-behavior-y: none; h-full overflow-y-auto'>
 			<div className='px-10'>
 				<div className='space-y-4'>
 					{/* <Title className='font-bold text-4xl'>
