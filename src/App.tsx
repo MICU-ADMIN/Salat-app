@@ -21,6 +21,8 @@ import {
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
+import Tab4 from './pages/Tab4';
+
 import '../src/index.css';
 
 /* Core CSS required for Ionic components to work properly */
@@ -64,6 +66,9 @@ const App: React.FC = () => (
 					<Route path='/tab3'>
 						<Tab3 />
 					</Route>
+					<Route path='/tab4'>
+						<Tab4 />
+					</Route>
 					<Route
 						exact
 						path='/'
@@ -71,8 +76,12 @@ const App: React.FC = () => (
 						<Redirect to='/tab1' />
 					</Route>
 				</IonRouterOutlet>
-				<IonTabBar slot='bottom'>
+				<IonTabBar
+					className='shadow-inner bg-blue-950'
+					slot='bottom'
+				>
 					<IonTabButton
+						className='shadow-inner bg-blue-950'
 						tab='tab1'
 						href='/tab1'
 					>
@@ -81,10 +90,11 @@ const App: React.FC = () => (
 							icon={triangle}
 						/>
 						<IonLabel>
-							Tab 1
+							Prayer
 						</IonLabel>
 					</IonTabButton>
 					<IonTabButton
+						className='shadow-inner bg-blue-950'
 						tab='tab2'
 						href='/tab2'
 					>
@@ -93,10 +103,11 @@ const App: React.FC = () => (
 							icon={ellipse}
 						/>
 						<IonLabel>
-							Tab 2
+							Analytics
 						</IonLabel>
 					</IonTabButton>
 					<IonTabButton
+						className='shadow-inner bg-blue-950'
 						tab='tab3'
 						href='/tab3'
 					>
@@ -105,7 +116,20 @@ const App: React.FC = () => (
 							icon={square}
 						/>
 						<IonLabel>
-							Tab 3
+							Qiblah
+						</IonLabel>
+					</IonTabButton>
+					<IonTabButton
+						className='shadow-inner bg-blue-950'
+						tab='tab4'
+						href='/tab4'
+					>
+						<IonIcon
+							aria-hidden='true'
+							icon={square}
+						/>
+						<IonLabel>
+							Settings
 						</IonLabel>
 					</IonTabButton>
 				</IonTabBar>
