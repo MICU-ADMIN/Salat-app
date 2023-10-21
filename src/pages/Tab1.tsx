@@ -49,7 +49,7 @@ const Tab1: React.FC = () => {
 									position:
 										'fixed',
 									top: 30,
-									left: 30,
+									left: 40,
 									right: 0,
 									pointerEvents:
 										'none',
