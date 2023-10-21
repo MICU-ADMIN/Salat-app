@@ -37,7 +37,7 @@ const Tab1: React.FC = () => {
 							top: 0,
 							left: 0,
 							right: 0,
-							height: '150px',
+							height: '200px',
 							pointerEvents:
 								'none',
 							zIndex: 20505,
@@ -48,7 +48,7 @@ const Tab1: React.FC = () => {
 								style={{
 									position:
 										'fixed',
-									top: 30,
+									top: 40,
 									left: 40,
 									right: 0,
 									pointerEvents:
