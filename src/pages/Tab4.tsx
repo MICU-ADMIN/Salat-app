@@ -7,6 +7,7 @@ import {
 	Switch,
 	Transition,
 } from '@headlessui/react';
+import { IonButton } from '@ionic/react';
 
 const tabs = [
 	{
@@ -175,12 +176,12 @@ const Tab4: React.FC = () => {
 																		Hagon
 																	</span>
 																	<span className='ml-4 flex-shrink-0'>
-																		<ion-button
-																			type='ion-button'
+																		<IonButton
+																			type='button'
 																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</ion-button>
+																		</IonButton>
 																	</span>
 																</dd>
 															</div>
@@ -197,24 +198,24 @@ const Tab4: React.FC = () => {
 																		/>
 																	</span>
 																	<span className='ml-4 flex flex-shrink-0 items-start space-x-4'>
-																		<ion-button
-																			type='ion-button'
+																		<IonButton
+																			type='button'
 																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</ion-button>
+																		</IonButton>
 																		<span
 																			className='text-gray-300'
 																			aria-hidden='true'
 																		>
 																			|
 																		</span>
-																		<ion-button
-																			type='ion-button'
+																		<IonButton
+																			type='button'
 																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Remove
-																		</ion-button>
+																		</IonButton>
 																	</span>
 																</dd>
 															</div>
@@ -227,12 +228,12 @@ const Tab4: React.FC = () => {
 																		chelsea.hagon@example.com
 																	</span>
 																	<span className='ml-4 flex-shrink-0'>
-																		<ion-button
-																			type='ion-button'
+																		<IonButton
+																			type='button'
 																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</ion-button>
+																		</IonButton>
 																	</span>
 																</dd>
 															</div>
@@ -248,12 +249,12 @@ const Tab4: React.FC = () => {
 																		Manager
 																	</span>
 																	<span className='ml-4 flex-shrink-0'>
-																		<ion-button
-																			type='ion-button'
+																		<IonButton
+																			type='button'
 																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</ion-button>
+																		</IonButton>
 																	</span>
 																</dd>
 															</div>
@@ -288,12 +289,12 @@ const Tab4: React.FC = () => {
 																		English
 																	</span>
 																	<span className='ml-4 flex-shrink-0'>
-																		<ion-button
-																			type='ion-button'
+																		<IonButton
+																			type='button'
 																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</ion-button>
+																		</IonButton>
 																	</span>
 																</dd>
 															</div>
@@ -307,24 +308,24 @@ const Tab4: React.FC = () => {
 																		DD-MM-YYYY
 																	</span>
 																	<span className='ml-4 flex flex-shrink-0 items-start space-x-4'>
-																		<ion-button
-																			type='ion-button'
+																		<IonButton
+																			type='button'
 																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Update
-																		</ion-button>
+																		</IonButton>
 																		<span
 																			className='text-gray-300'
 																			aria-hidden='true'
 																		>
 																			|
 																		</span>
-																		<ion-button
-																			type='ion-button'
+																		<IonButton
+																			type='button'
 																			className='rounded-md bg-white font-medium text-blue-600 hover:text-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-800 focus:ring-offset-2'
 																		>
 																			Remove
-																		</ion-button>
+																		</IonButton>
 																	</span>
 																</dd>
 															</div>
