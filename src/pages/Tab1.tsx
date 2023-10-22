@@ -20,7 +20,13 @@ import {
 
 const Tab1: React.FC = () => {
 	return (
-		<main className='overscroll-behavior-y: none; h-full overflow-y-auto'>
+		<main
+			className='h-full overflow-y-auto'
+			style={{
+				overscrollBehaviorY: 'none',
+				scrollSnapType: 'none',
+			}}
+		>
 			<div className='p-10 '>
 				<div
 					style={{
@@ -32,7 +38,7 @@ const Tab1: React.FC = () => {
 					<div
 						style={{
 							background:
-								'linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)',
+								'linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)',
 							position: 'fixed',
 							top: 0,
 							left: 0,
@@ -45,11 +51,12 @@ const Tab1: React.FC = () => {
 					>
 						<div className='space-y-4'>
 							<Badge
+								className='shadow-inner'
 								style={{
 									position:
 										'fixed',
 									top: 40,
-									left: 40,
+									left: 45,
 									right: 0,
 									pointerEvents:
 										'none',
@@ -68,7 +75,7 @@ const Tab1: React.FC = () => {
 
 				<Grid
 					numItemsLg={6}
-					className='gap-6 mt-10'
+					className='gap-6 p-2 mt-10 pt-5'
 				>
 					{/* Main section */}
 					<Col numColSpanLg={4}>
@@ -93,7 +100,7 @@ const Tab1: React.FC = () => {
 				className='relative'
 			>
 				<div className='h-20 w-full' />
-				<div className='absolute inset-0 bg-gradient-to-t from-blue-950' />
+				<div className='absolute  inset-0 bg-gradient-to-t from-blue-950' />
 			</div>
 		</main>
 	);
