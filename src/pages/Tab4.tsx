@@ -30,14 +30,14 @@ const Tab4: React.FC = () => {
 
 	return (
 		<>
-			{/*
-        This example requires updating your template:
-        ```
-        <html class="h-full bg-white">
-        <body class="h-full">
-        ```
-      */}
-			<main className='overscroll-behavior-y: none; h-full overflow-y-auto'>
+			<main
+				className='h-full overflow-y-auto'
+				style={{
+					overscrollBehaviorY:
+						'none',
+					scrollSnapType: 'none',
+				}}
+			>
 				{/* Static sidebar for desktop */}
 
 				{/* Content area */}

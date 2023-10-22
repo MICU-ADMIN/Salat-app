@@ -16,7 +16,13 @@ import Scatter from '../components/analytics.scatter';
 
 const Tab2: React.FC = () => {
 	return (
-		<main className='overscroll-behavior-y: none; h-full overflow-y-auto'>
+		<main
+			className='h-full overflow-y-auto'
+			style={{
+				overscrollBehaviorY: 'none',
+				scrollSnapType: 'none',
+			}}
+		>
 			<div className='px-10'>
 				<div className='space-y-4'>
 					{/* <Title className='font-bold text-4xl'>
