@@ -11,6 +11,8 @@ import { PrayerStreak } from '../components/prayer.streak';
 import LineChart from '../components/analytics.lineGraph';
 import DonutChart from '../components/analytics.donutChart';
 import Timing from '../components/analytics.timing';
+import RingChart from '../components/analytics.groupLineChart';
+import Scatter from '../components/analytics.scatter';
 
 const Tab2: React.FC = () => {
 	return (
@@ -34,12 +36,17 @@ const Tab2: React.FC = () => {
 				>
 					{/* Main section */}
 					<Col numColSpanLg={4}>
-						<Card className='h-full'>
+						<Card className='mb-5'>
 							{/* <div className='h-60'> */}
 							{/*  */}
 							<LineChart />
 							{/* </div> */}
 						</Card>
+
+						{/* <div className='h-60'> */}
+						{/*  */}
+						<Scatter />
+						{/* </div> */}
 					</Col>
 
 					{/* KPI sidebar */}
@@ -53,6 +60,10 @@ const Tab2: React.FC = () => {
 
 							<Card>
 								<Timing />
+							</Card>
+
+							<Card>
+								<RingChart />
 							</Card>
 						</div>
 					</Col>

@@ -13,106 +13,106 @@ interface Tracker {
 }
 
 const data: Tracker[] = [
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'rose',
-		tooltip: 'Downtime',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'rose',
+	// 	tooltip: 'Missed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
 	{
 		color: 'gray',
-		tooltip: 'Maintenance',
+		tooltip: 'Unknown',
 	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
-	{
-		color: 'yellow',
-		tooltip: 'Degraded',
-	},
-	{
-		color: 'emerald',
-		tooltip: 'Operational',
-	},
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
+	// {
+	// 	color: 'yellow',
+	// 	tooltip: 'Late',
+	// },
+	// {
+	// 	color: 'emerald',
+	// 	tooltip: 'Prayed',
+	// },
 ];
 
 export const PrayerStreak = () => (

@@ -20,7 +20,7 @@ import {
 	TabPanels,
 } from '@tremor/react';
 
-const sales = [
+const prayers = [
 	{
 		hour: '00:00',
 		today: 90,
@@ -56,14 +56,14 @@ export default function LineChart() {
 	] = useState('average');
 	return (
 		<>
-			<Text>Today's Sales</Text>
+			<Text>Today's Prayers</Text>
 			<Metric className='mt-1'>
 				$ 276
 			</Metric>
 			<TabGroup>
 				<TabList className='mt-6'>
 					<Tab>
-						vs. peer average
+						vs. your average
 					</Tab>
 					<Tab>vs. yesterday</Tab>
 				</TabList>
@@ -71,7 +71,7 @@ export default function LineChart() {
 					<TabPanel>
 						<Line
 							className='mt-4 h-56'
-							data={sales}
+							data={prayers}
 							index='hour'
 							categories={[
 								'today',
@@ -94,7 +94,7 @@ export default function LineChart() {
 							<Legend
 								categories={[
 									'Today',
-									'Peer average',
+									'Your average',
 								]}
 								colors={[
 									'blue',
@@ -104,26 +104,25 @@ export default function LineChart() {
 							/>
 						</Flex>
 						<Callout
-							title='7.8% above peer average'
+							title='7.8% above your average'
 							icon={
 								TrendingUpIcon
 							}
 							color='emerald'
 							className='mt-4'
 						>
-							Today's sales
+							Today's prayers
 							currently
 							outperform the
-							sales average of
-							all peer products
-							in North West
-							region
+							prayers average of
+							all your prayers in
+							the last month
 						</Callout>
 					</TabPanel>
 					<TabPanel>
 						<Line
 							className='mt-4 h-56'
-							data={sales}
+							data={prayers}
 							index='hour'
 							categories={[
 								'today',
@@ -163,9 +162,9 @@ export default function LineChart() {
 							color='rose'
 							className='mt-4'
 						>
-							Today's sales
+							Today's prayers
 							underperform the
-							sales yesterday.
+							prayers yesterday.
 						</Callout>
 					</TabPanel>
 				</TabPanels>

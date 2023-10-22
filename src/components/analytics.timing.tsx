@@ -9,7 +9,7 @@ import {
 
 const categories = [
 	{
-		title: 'Sales – NPS',
+		title: 'Prayers – accuracy',
 		metric: '9.5',
 		value: 95,
 	},
@@ -19,7 +19,7 @@ const values = [10, 25, 45, 20];
 
 export default function Timing() {
 	return (
-		<>
+		<div className='p-2'>
 			{categories.map((item) => (
 				<>
 					<Text>{item.title}</Text>
@@ -50,6 +50,6 @@ export default function Timing() {
 					/>
 				</>
 			))}
-		</>
+		</div>
 	);
 }

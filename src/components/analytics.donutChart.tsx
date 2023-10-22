@@ -23,33 +23,33 @@ import {
 	Title,
 } from '@tremor/react';
 
-const stocks = [
+const prayers = [
 	{
-		name: 'Off Running AG',
+		name: 'Fajr',
 		value: 10456,
 		performance: '6.1%',
 		deltaType: 'increase',
 	},
 	{
-		name: 'Not Normal Inc.',
+		name: 'Dhuhr',
 		value: 5789,
 		performance: '1.2%',
 		deltaType: 'moderateDecrease',
 	},
 	{
-		name: 'Logibling Inc.',
+		name: 'Asr',
 		value: 4367,
 		performance: '2.3%',
 		deltaType: 'moderateIncrease',
 	},
 	{
-		name: 'Raindrop Inc.',
+		name: 'Maghrib',
 		value: 3421,
 		performance: '0.5%',
 		deltaType: 'moderateDecrease',
 	},
 	{
-		name: 'Mwatch Group',
+		name: 'Isha',
 		value: 1432,
 		performance: '3.4%',
 		deltaType: 'decrease',
@@ -69,7 +69,7 @@ export default function DonutChart() {
 		setSelectedIndex,
 	] = useState(0);
 	return (
-		<>
+		<div className='p-1'>
 			<Flex
 				className='space-x-8'
 				justifyContent='between'
@@ -96,22 +96,20 @@ export default function DonutChart() {
 					</TabList>
 				</TabGroup>
 			</Flex>
-			<Text className='mt-8'>
+			{/* <Text className='mt-8'>
 				Portfolio value
-			</Text>
+			</Text> */}
 			{/* <Metric>$ 25,465</Metric> */}
-			<Divider />
-			<Text className='mt-8'>
+			{/* <Divider /> */}
+			{/* <Text className='mt-8'>
 				<Bold>
-					Asset Allocation
+					Salat Allocation
 				</Bold>
-			</Text>
-			<Text>
-				1 Asset class • 5 Holdings
-			</Text>
+			</Text> */}
+			{/* <Text> 5 Prayers</Text> */}
 			{selectedIndex === 0 ? (
 				<Donut
-					data={stocks}
+					data={prayers}
 					showAnimation={false}
 					category='value'
 					index='name'
@@ -127,23 +125,25 @@ export default function DonutChart() {
 						justifyContent='between'
 					>
 						<Text className='truncate'>
-							<Bold>Stocks</Bold>
+							<Bold>
+								Prayers
+							</Bold>
 						</Text>
 						<Text>
 							Since transaction
 						</Text>
 					</Flex>
 					<List className='mt-4'>
-						{stocks.map(
-							(stock) => (
+						{prayers.map(
+							(prayer) => (
 								<ListItem
 									key={
-										stock.name
+										prayer.name
 									}
 								>
 									<Text>
 										{
-											stock.name
+											prayer.name
 										}
 									</Text>
 									<Flex
@@ -156,18 +156,18 @@ export default function DonutChart() {
 												'us'
 											)
 												.format(
-													stock.value
+													prayer.value
 												)
 												.toString()}
 										</Text>
 										<BadgeDelta
 											deltaType={
-												stock.deltaType
+												prayer.deltaType
 											}
 											size='xs'
 										>
 											{
-												stock.performance
+												prayer.performance
 											}
 										</BadgeDelta>
 									</Flex>
@@ -177,7 +177,7 @@ export default function DonutChart() {
 					</List>
 				</>
 			)}
-			<Flex className='mt-6 pt-4 border-t'>
+			{/* <Flex className='mt-6 pt-4 border-t'>
 				<Button
 					size='xs'
 					variant='light'
@@ -188,7 +188,7 @@ export default function DonutChart() {
 				>
 					View more
 				</Button>
-			</Flex>
-		</>
+			</Flex> */}
+		</div>
 	);
 }

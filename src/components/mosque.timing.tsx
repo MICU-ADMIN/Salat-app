@@ -33,7 +33,7 @@ export default function Timing() {
 					justifyContent='start'
 				>
 					<Text>
-						<Bold>Vienna</Bold>
+						<Bold>{`Jumu'ah`}</Bold>
 					</Text>
 					<Icon
 						variant='simple'
@@ -45,8 +45,7 @@ export default function Timing() {
 					/>
 					<Text className='truncate'>
 						<Bold>
-							St. Anton am
-							Arlberg{' '}
+							Al Iman center
 						</Bold>
 					</Text>
 				</Flex>

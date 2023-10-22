@@ -6,6 +6,9 @@ import {
 	Grid,
 	Col,
 } from '@tremor/react';
+import React, {
+	useEffect,
+} from 'react';
 import PrayerRadio from '../components/prayer.radioList';
 import { PrayerStreak } from '../components/prayer.streak';
 import Example from '../components/analytics.lineGraph';
@@ -19,6 +22,13 @@ import {
 } from '@ionic/react';
 
 const Tab1: React.FC = () => {
+	useEffect(() => {
+		// return () => {
+		// 	effect;
+		// };
+		
+	}, []);
+
 	return (
 		<main
 			className='h-full overflow-y-auto'
