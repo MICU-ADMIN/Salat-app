@@ -1,28 +1,31 @@
+import React from 'react';
 import {
 	Card,
 	ScatterChart,
 } from '@tremor/react';
 
-const chartdata2 = [
-	{
-		location: 'Location A',
-		x: 100,
-		y: 200,
-		z: 200,
-	},
-	// ...
-	{
-		location: 'Location D',
-		x: 70,
-		y: 0,
-		z: 950,
-	},
-];
+interface ScatterProps {
+	data: {
+		location: string;
+		x: number;
+		y: number;
+		z: number;
+	}[];
+	customTooltip: (params: {
+		payload: any;
+		active: boolean;
+		label: string;
+	}) => JSX.Element | null;
+}
 
 const customTooltip = ({
 	payload,
 	active,
 	label,
+}: {
+	payload: any;
+	active: boolean;
+	label: string;
 }) => {
 	if (!active || !payload) return null;
 	return (
@@ -37,8 +40,8 @@ const customTooltip = ({
 					</p>
 					{payload.map(
 						(
-							payloadItem,
-							index
+							payloadItem: any,
+							index: any
 						) => (
 							<div
 								key={index}
@@ -64,6 +67,22 @@ const customTooltip = ({
 };
 
 export default function Scatter() {
+	const chartdata2 = [
+		{
+			location: 'Location A',
+			x: 100,
+			y: 200,
+			z: 200,
+		},
+		// ...
+		{
+			location: 'Location D',
+			x: 70,
+			y: 0,
+			z: 950,
+		},
+	];
+
 	return (
 		<>
 			<Card>

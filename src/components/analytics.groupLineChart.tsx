@@ -1,196 +1,4 @@
-// // import React from 'react';
-// // import { ProgressCircle } from '@tremor/react';
-
-// // const data = [
-// // 	{
-// // 		date: 'Jan 23',
-// // 		bpm: 167,
-// // 		effort: 23,
-// // 		recovery: 40,
-// // 		strain: 1.1,
-// // 		sleep: 89,
-// // 	},
-// // 	{
-// // 		date: 'Feb 23',
-// // 		bpm: 121,
-// // 		effort: 78,
-// // 		recovery: 45,
-// // 		strain: 4.1,
-// // 		sleep: 79,
-// // 	},
-// // 	// ... other data entries
-// // ];
-
-// // const RingChart = () => {
-// // 	const selectedItem = data[0]; // Display data for the first day by default
-
-// // 	if (!selectedItem) return null;
-
-// // 	return (
-// // 		<div className='flex flex-wrap items-center space-x-6'>
-// // 			<div className='flex-1 text-center w-full xs:w-full sm:w-1/2 md:w-1/3'>
-// // 				<ProgressCircle
-// // 					value={
-// // 						selectedItem.effort
-// // 					}
-// // 					radius={45}
-// // 					color='violet'
-// // 				>
-// // 					<ProgressCircle
-// // 						value={
-// // 							selectedItem.recovery
-// // 						}
-// // 						radius={36}
-// // 						color='fuchsia'
-// // 					/>
-// // 				</ProgressCircle>
-// // 			</div>
-// // 			<div className='flex-1 sm:pl-4 w-full sm:w-full '>
-// // 				<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 py-1 m-4 text-center justify-center'>
-// // 					<div className='flex-1'>
-// // 						<h4 className='text-sm text-gray-500'>
-// // 							Sunnah
-// // 						</h4>
-// // 						<p className='font-medium text-gray-700'>
-// // 							{
-// // 								selectedItem.strain
-// // 							}
-// // 						</p>
-// // 					</div>
-// // 					<div className='flex-1'>
-// // 						<h4 className='text-sm text-gray-500'>
-// // 							Punctuality
-// // 						</h4>
-// // 						<p className='font-medium text-violet-600'>
-// // 							{
-// // 								selectedItem.effort
-// // 							}
-// // 							%
-// // 						</p>
-// // 					</div>
-// // 					<div className='flex-1'>
-// // 						<h4 className='text-sm text-gray-500'>
-// // 							Attendance
-// // 						</h4>
-// // 						<p className='font-medium text-fuchsia-700'>
-// // 							{
-// // 								selectedItem.recovery
-// // 							}
-// // 							%
-// // 						</p>
-// // 					</div>
-// // 				</div>
-// // 			</div>
-// // 		</div>
-// // 	);
-// // };
-
-// // export default RingChart;
-
-// import React from 'react';
-// import { ProgressCircle } from '@tremor/react';
-
-// const data = [
-// 	{
-// 		date: 'Jan 23',
-// 		bpm: 167,
-// 		effort: 23,
-// 		recovery: 40,
-// 		strain: 1.1,
-// 		sleep: 89,
-// 	},
-// 	{
-// 		date: 'Feb 23',
-// 		bpm: 121,
-// 		effort: 78,
-// 		recovery: 45,
-// 		strain: 4.1,
-// 		sleep: 79,
-// 	},
-// 	// ... other data entries
-// ];
-
-// const RingChart = () => {
-// 	const selectedItem = data[0]; // Display data for the first day by default
-
-// 	if (!selectedItem) return null;
-
-// 	return (
-// 		<div className='flex flex-wrap items-center space-x-6'>
-// 			<div className='flex-1 text-center w-full xs:w-full sm:w-1/2 md:w-1/3'>
-// 				<ProgressCircle
-// 					value={
-// 						selectedItem.effort
-// 					}
-// 					radius={45}
-// 					color='violet'
-// 				>
-// 					<ProgressCircle
-// 						value={
-// 							selectedItem.recovery
-// 						}
-// 						radius={36}
-// 						color='fuchsia'
-// 					/>
-// 				</ProgressCircle>
-// 			</div>
-// 			<div className='flex-1  w-full sm:w-full '>
-// 				<div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-4 py-1 m-4 text-center justify-center items-center'>
-// 					<div
-// 						style={{
-// 							margin: 10,
-// 							width: 100,
-// 						}}
-// 					>
-// 						<h4 className='text-sm text-gray-500'>
-// 							Sunnah
-// 						</h4>
-// 						<p className='font-medium text-gray-700'>
-// 							{
-// 								selectedItem.strain
-// 							}
-// 						</p>
-// 					</div>
-// 					<div
-// 						style={{
-// 							margin: 10,
-// 							width: 100,
-// 						}}
-// 					>
-// 						<h4 className='text-sm text-gray-500'>
-// 							Punctuality
-// 						</h4>
-// 						<p className='font-medium text-violet-600'>
-// 							{
-// 								selectedItem.effort
-// 							}
-// 							%
-// 						</p>
-// 					</div>
-// 					<div
-// 						style={{
-// 							margin: 10,
-// 							width: 100,
-// 						}}
-// 					>
-// 						<h4 className='text-sm text-gray-500'>
-// 							Attendance
-// 						</h4>
-// 						<p className='font-medium text-fuchsia-700'>
-// 							{
-// 								selectedItem.recovery
-// 							}
-// 							%
-// 						</p>
-// 					</div>
-// 				</div>
-// 			</div>
-// 		</div>
-// 	);
-// };
-
-// export default RingChart;
-
+import React from 'react';
 import {
 	AreaChart,
 	Card,
@@ -202,14 +10,22 @@ import {
 	TabPanel,
 } from '@tremor/react';
 
-const data = [
+// Define the type for your data
+interface DataItem {
+	Month: any;
+	Visitors: number;
+	'Page Views': number;
+	'Bounce Rate': number;
+}
+
+const data: DataItem[] = [
 	{
 		Month: 'Jan 22',
 		Visitors: 289,
 		'Page Views': 1012,
 		'Bounce Rate': 0.5,
 	},
-	//...
+	// ...
 	{
 		Month: 'Jan 23',
 		Visitors: 389,
@@ -218,17 +34,24 @@ const data = [
 	},
 ];
 
-const numberFormatter = (value) =>
+const numberFormatter = (
+	value: number
+) =>
 	Intl.NumberFormat('us')
 		.format(value)
 		.toString();
 
-const percentageFormatter = (value) =>
-	`${Intl.NumberFormat('us')
-		.format(value * 100)
-		.toString()}%`;
+const percentageFormatter = (
+	value: number
+) =>
+	`${Intl.NumberFormat('us').format(
+		value * 100
+	)}%`;
 
-function sumArray(array, metric) {
+function sumArray(
+	array: DataItem[],
+	metric: keyof DataItem
+) {
 	return array.reduce(
 		(accumulator, currentValue) =>
 			accumulator +
